@@ -1,0 +1,11 @@
+type Query {
+    # Servicio 1: Analizar sentimientos
+    analyzeSentiment(text: String): SentimientResult
+
+    # Servicio 2: Detectar idioma (Agregamos esto)
+    detectLanguage(text: String): String
+}
+
+type SentimientResult {
+    sentiment: String
+}
